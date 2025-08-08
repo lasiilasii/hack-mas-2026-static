@@ -1,0 +1,1 @@
+# hack-mas-2026-static
