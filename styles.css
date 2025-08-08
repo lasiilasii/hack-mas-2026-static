@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('fonts/OpenDyslexic-Regular.otf');
+}
+
+@font-face {
+  font-family: 'VDS';
+  src: url('fonts/VDS_Bold_New.ttf') format('truetype');
+}
+
+:root {
+  --color-white: #FAFAFA;
+  --color-dark-gray: #2C2B2B;
+  --color-black: #151515;
+  --color-radioactive-green: #02ff67;
+  --color-lavender-sky: #a77aff; 
+  --color-violet:var(--color-lavender-sky);
+}
+
+* {
+  margin: 0;
+  color: var(--color-black);
+ /* text-shadow: -1px -1px 0 var(--color-white), 1px -1px 0 var(--color-white), -1px 1px 0 var(--color-white), 1px 1px 0 var(--color-white);*/
+}
+
+body {
+  margin: auto;
+  max-width: 1900px;
+  background-color: var(--color-violet);
+  /*background: url(assets/magical-dust.jpg) no-repeat;*/
+  height: 100%;
+}
+
+body * {
+  font-family: 'VDS';
+  letter-spacing: 0.065em;
+}
+
+#body * {
+  font-size: 32px;
+}
+
+body p.text {
+  line-height: 38px;
+  font-size: 30px;;
+}
+
+body p.lightningtalksubtitle {
+  font-size: 28px;
+}
+
+body strong {
+  font-family: Arial;
+}
+
+h1,
+h2 {
+  font-family: 'OpenDyslexic';
+  letter-spacing: -0.025em;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 38px;
+}
+
+.main {
+  margin-top: 10vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  display: flex;
+  align-items: center;
+  min-height: 150px;
+}
+
+.main img {
+  width: 100%;
+}
+
+.main div:first-child {
+  flex: 1;
+  min-width: 90vh;
+  margin-right: 4vw;
+  font-size: 28px;
+}
+
+
+.main div:first-child.l {
+  flex: 1;
+  min-width: 90vh;
+  margin-right: 4vw;
+  font-size: 28px;
+}
+
+.main div:last-child {
+  flex: 2;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 34px;
+  background-color: var(--color-black-transparent);
+}
+
+.main div.lightningtalk {
+  margin-top: 6.8vh;
+  border-radius: 40px 40px 40px 200px;
+  text-align: left;
+  margin-left: 4vh;
+  padding-top: 0;
+}
+.main a {
+  color: var(--color-radioactive-green);
+}
+
+.main div.content {
+  flex: 2;
+  background-color: var(--color-radioactive-green);
+  border-radius: 40px 200px 40px 40px;
+  box-shadow: rgba(2, 255, 103, 0.5) 20px 20px, rgba(2, 255, 103, 0.3) 40px 40px, rgba(2, 255, 103, 0.2) 60px 60px, rgba(2, 255, 103, 0.1) 80px 80px, rgba(2, 255, 103, 0.05) 100px 100px;
+}
+
+.info {
+  font-size: 18px;
+}
+
+.footer {
+  height: 21px;
+  background-color: var(--color-black);
+  color: var(--color-violet);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: var(--color-white);
+  text-align: center;
+  margin-left: 0;
+}
+
+.qrcode img {
+  height: 177px;
+  position: fixed;
+  left: 30px;
+  bottom: 50px;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+#footer img {width:100%;}
+
+.footer * {
+  font-size: 14px;
+}
+
+.footer p {
+  color: var(--color-radioactive-green);
+}
+
+.footer a {
+  color: var(--color-lavender-sky);
+}
+
+/* mobile */
+@media screen and (max-width: 793px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .header {
+    height: 40vh;
+  }
+
+  .main {
+    flex-direction: column;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+
+  .projects ul li {
+    width: 100%;
+  }
+
+  .footer {
+    position: relative;
+  }
+
+  .main div:last-child {
+    border-radius: 40px 100px 40px 40px;
+  }
+
+  img {
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+}
