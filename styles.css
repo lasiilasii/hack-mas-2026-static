@@ -20,14 +20,12 @@
 * {
   margin: 0;
   color: var(--color-black);
- /* text-shadow: -1px -1px 0 var(--color-white), 1px -1px 0 var(--color-white), -1px 1px 0 var(--color-white), 1px 1px 0 var(--color-white);*/
 }
 
 body {
   margin: auto;
   max-width: 1900px;
   background-color: var(--color-violet);
-  /*background: url(assets/magical-dust.jpg) no-repeat;*/
   height: 100%;
 }
 
