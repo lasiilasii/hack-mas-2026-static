@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'OpenDyslexic';
-  src: url('fonts/OpenDyslexic-Regular.otf');
+  font-family: 'headfont';
+  src: url('fonts/chau-philomene-one.regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'VDS';
-  src: url('fonts/VDS_Bold_New.ttf') format('truetype');
+  font-family: 'bodyfont';
+  src: url('fonts/Hack-Regular.ttf') format('truetype');
 }
 
 :root {
@@ -30,8 +30,7 @@ body {
 }
 
 body * {
-  font-family: 'VDS';
-  letter-spacing: 0.065em;
+  font-family: 'bodyfont';
 }
 
 #body * {
@@ -40,7 +39,7 @@ body * {
 
 body p.text {
   line-height: 38px;
-  font-size: 30px;;
+  font-size: 30px;
 }
 
 body p.lightningtalksubtitle {
@@ -53,12 +52,11 @@ body strong {
 
 h1,
 h2 {
-  font-family: 'OpenDyslexic';
-  letter-spacing: -0.025em;
+  font-family: 'headfont';
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 h2 {
@@ -67,7 +65,7 @@ h2 {
 }
 
 .main {
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-left: 5vw;
   margin-right: 5vw;
   display: flex;
@@ -103,15 +101,14 @@ h2 {
   background-color: var(--color-black-transparent);
 }
 
-.main div.lightningtalk {
-  margin-top: 6.8vh;
-  border-radius: 40px 40px 40px 200px;
+div.pastevents {
   text-align: left;
-  margin-left: 4vh;
   padding-top: 0;
 }
-.main a {
+
+a {
   color: var(--color-radioactive-green);
+  font-size: 26px;
 }
 
 .main div.content {
@@ -119,6 +116,12 @@ h2 {
   background-color: var(--color-radioactive-green);
   border-radius: 40px 200px 40px 40px;
   box-shadow: rgba(2, 255, 103, 0.5) 20px 20px, rgba(2, 255, 103, 0.3) 40px 40px, rgba(2, 255, 103, 0.2) 60px 60px, rgba(2, 255, 103, 0.1) 80px 80px, rgba(2, 255, 103, 0.05) 100px 100px;
+  margin-right: 7vw;
+  margin-top: 12vh;
+}
+
+.past div {
+  padding-left: 15vw;
 }
 
 .info {
@@ -126,7 +129,8 @@ h2 {
 }
 
 .footer {
-  height: 21px;
+  padding-top: 3px;
+  height: 23px;
   background-color: var(--color-black);
   color: var(--color-violet);
   position: fixed;
@@ -136,15 +140,6 @@ h2 {
   color: var(--color-white);
   text-align: center;
   margin-left: 0;
-}
-
-.qrcode img {
-  height: 177px;
-  position: fixed;
-  left: 30px;
-  bottom: 50px;
-  border-radius: 20px;
-  opacity: 0.8;
 }
 
 #footer img {width:100%;}
@@ -188,23 +183,36 @@ h2 {
   .footer {
     position: relative;
     height: 40px;
+    padding-top:12px;
   }
 
   .main div:last-child {
     border-radius: 40px 100px 40px 40px;
+    margin-top: 50px;
   }
 
   .main div:first-child {
     min-width: 50vw;
+    margin-bottom: 0px;
   }
 
   .main div.content {
-    margin-bottom: 70px;
+    margin-top: 20px;
+    margin-bottom: 50px;;
+  }
+
+  .past div.pastevents {
+    margin-top: 50px;
+    margin-bottom: 25px;
   }
 
   img {
     max-width: 90vw;
     margin: 0;
     padding: 0;
+  }
+
+  a {
+    font-size: large;
   }
 }
